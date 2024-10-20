@@ -1,0 +1,18 @@
+[Sun Oct 20 01:44:25.832437 2024] [wsgi:error] [pid 24749:tid 139791868810816] [client 218.106.117.238:4082] mod_wsgi (pid=24749): Failed to exec Python script file '/home/work/tagsystem/tagsystem.wsgi'.
+[Sun Oct 20 01:44:25.832678 2024] [wsgi:error] [pid 24749:tid 139791868810816] [client 218.106.117.238:4082] mod_wsgi (pid=24749): Exception occurred processing WSGI script '/home/work/tagsystem/tagsystem.wsgi'.
+[Sun Oct 20 01:44:25.833131 2024] [wsgi:error] [pid 24749:tid 139791868810816] [client 218.106.117.238:4082] Traceback (most recent call last):
+[Sun Oct 20 01:44:25.833228 2024] [wsgi:error] [pid 24749:tid 139791868810816] [client 218.106.117.238:4082]   File "/home/work/tagsystem/tagsystem.wsgi", line 4, in <module>
+[Sun Oct 20 01:44:25.833240 2024] [wsgi:error] [pid 24749:tid 139791868810816] [client 218.106.117.238:4082]     os.environ['FLASK_APP'] = 'app.py'
+[Sun Oct 20 01:44:25.833270 2024] [wsgi:error] [pid 24749:tid 139791868810816] [client 218.106.117.238:4082] NameError: name 'os' is not defined
+[Sun Oct 20 01:44:26.801536 2024] [wsgi:error] [pid 24750:tid 139791868810816] [client 218.106.117.238:4083] mod_wsgi (pid=24750): Failed to exec Python script file '/home/work/tagsystem/tagsystem.wsgi'.
+[Sun Oct 20 01:44:26.801666 2024] [wsgi:error] [pid 24750:tid 139791868810816] [client 218.106.117.238:4083] mod_wsgi (pid=24750): Exception occurred processing WSGI script '/home/work/tagsystem/tagsystem.wsgi'.
+[Sun Oct 20 01:44:26.802125 2024] [wsgi:error] [pid 24750:tid 139791868810816] [client 218.106.117.238:4083] Traceback (most recent call last):
+[Sun Oct 20 01:44:26.802231 2024] [wsgi:error] [pid 24750:tid 139791868810816] [client 218.106.117.238:4083]   File "/home/work/tagsystem/tagsystem.wsgi", line 4, in <module>
+[Sun Oct 20 01:44:26.802243 2024] [wsgi:error] [pid 24750:tid 139791868810816] [client 218.106.117.238:4083]     os.environ['FLASK_APP'] = 'app.py'
+[Sun Oct 20 01:44:26.802271 2024] [wsgi:error] [pid 24750:tid 139791868810816] [client 218.106.117.238:4083] NameError: name 'os' is not defined
+[Sun Oct 20 02:14:47.732185 2024] [core:error] [pid 24750:tid 139791664350784] [client 165.154.20.200:57326] AH10244: invalid URI path (/cgi-bin/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/bin/sh)
+[Sun Oct 20 02:14:48.304615 2024] [core:error] [pid 24750:tid 139791655958080] [client 165.154.20.200:57796] AH10244: invalid URI path (/cgi-bin/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/bin/sh)
+[Sun Oct 20 07:25:25.004896 2024] [core:error] [pid 24749:tid 139791672743488] [client 170.84.62.14:52100] AH10244: invalid URI path (/cgi-bin/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/bin/sh)
+[Sun Oct 20 07:25:25.835059 2024] [core:error] [pid 24749:tid 139791655958080] [client 170.84.62.9:52114] AH10244: invalid URI path (/cgi-bin/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/bin/sh)
+[Sun Oct 20 09:15:47.357365 2024] [core:error] [pid 24749:tid 139791756670528] [client 125.122.12.36:42104] AH10244: invalid URI path (/cgi-bin/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/bin/sh)
+[Sun Oct 20 09:15:49.246823 2024] [core:error] [pid 24749:tid 139791739885120] [client 125.122.12.36:42866] AH10244: invalid URI path (/cgi-bin/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/bin/sh)
