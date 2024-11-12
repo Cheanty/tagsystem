@@ -11,9 +11,10 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 app.config['ALLOWED_EXTENSIONS'] = {'txt', 'csv'}
 
 # 上传首页
-@app.route('/')
-def hello():
-    return render_template('index.html')
+@app.route('/',methods=['GET'])
+def index():
+    ns = request.args.get('name', 'Guest')
+    return render_template('index.html',name=ns)
 
 @app.route('/submit',methods=['POST'])
 def submit():
@@ -47,4 +48,4 @@ def upload_file():
     return '文件类型不允许上传'
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5050)
+    app.run(host='0.0.0.0', port=5050,debug=True)
