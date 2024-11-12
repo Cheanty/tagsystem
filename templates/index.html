@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+    <script src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>
+    <title>tapsystem</title>
+    <!-- 添加内联样式来设置背景颜色和布局 -->
+    <style>
+        body {
+            background-color: #ade6fa;
+            display: flex;
+            justify-content: space-around;
+            align-items: stretch;
+            height: 100vh; /* 确保body占据整个视口高度 */
+        }
+        /* 圆角矩形样式 */
+     .rounded-rect {
+            width: 49%;
+            height: 98%;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* 添加阴影效果 */
+        }
+    </style>
+</head>
+<body>
+    <!-- 三个圆角矩形 -->
+    <div class="rounded-rect">
+        <h1>输入文字并提交</h1>
+        <form action="/submit" method="POST">
+            <label for="text_input">请输入内容:</label>
+            <input type="text" id="text_input" name="text_input" required>
+            <button type="submit" class="btn btn - primary">提交</button>
+        </form>
+    </div>
+    <div class="rounded-rect">
+        <h1>传.txt 或.csv 文件</h1>
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+            <label for="file">选择文件 (.txt,.csv):</label>
+            <input type="file" id="file" name="file" accept=".txt,.csv" required>
+            <br><br>
+            <button type="submit">上传文件</button>
+        </form>
+    </div>
+
+</body>
+</html>
